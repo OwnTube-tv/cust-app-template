@@ -147,14 +147,3 @@ EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=<your_apple_tv_top_shelf_wide_2x_path>
 - Ensure all referenced files (e.g., icons and splash images) exist in the specified paths.
 - Double-check the configurations before deploying to avoid runtime errors.
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Contributions
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues) for more details.
