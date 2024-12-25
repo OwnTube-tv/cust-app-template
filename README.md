@@ -49,7 +49,7 @@ Define the following variables for all platforms:
   ```bash
   EXPO_PUBLIC_ICON=<your_icon_url>
   ```
-  The global icon used in the app.
+  The global icon used in the app. Size: arbitrary but looks best if 512x512 is reused here.
 
 #### Web Platform
 Define the following variables for the web platform:
@@ -58,7 +58,7 @@ Define the following variables for the web platform:
   ```bash
   EXPO_PUBLIC_FAVICON_URL=<your_favicon_url>
   ```
-  The URL of the favicon for your site.
+  The URL of the favicon for your site. Size: 32x32.
 
 - **Base URL:**
   ```bash
@@ -79,13 +79,13 @@ Define the following variables for the mobile platform:
   ```bash
   EXPO_PUBLIC_SPLASH_IMAGE=<your_splash_image_path>
   ```
-  The splash screen image file.
+  The splash screen image file. Size: 1152x1152, transparent background.
 
-- **App Icon:**
+- **Android TV:**
   ```bash
-  EXPO_PUBLIC_ICON=<your_app_icon_path>
+  EXPO_PUBLIC_ANDROID_TV_BANNER=<your_android_tv_banner_path>
   ```
-  The app icon file.
+  The Android TV banner image file. Size: 320x180.
 
 - **Apple TV Icons:**
   ```bash
@@ -97,7 +97,14 @@ Define the following variables for the mobile platform:
   EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE=<your_apple_tv_top_shelf_wide_path>
   EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=<your_apple_tv_top_shelf_wide_2x_path>
   ```
-  Apple TV-specific icons and top shelf images.
+  Apple TV-specific icons and top shelf images. Sizes:
+  -  icon: 1280x768
+  -  iconSmall: 400x240
+  -  iconSmall2x: 800x480
+  -  topShelf: 1920x720
+  -  topShelf2x: 3840x1440
+  -  topShelfWide: 2320x720
+  -  topShelfWide2x: 4640x1440
 
 ---
 
@@ -110,18 +117,13 @@ EXPO_PUBLIC_PRIMARY_BACKEND=<your_instance_hostname>
 EXPO_PUBLIC_APP_NAME=<your_app_name>
 EXPO_PUBLIC_APP_SLUG=<your_app_slug>
 EXPO_PUBLIC_ICON=<your_icon_url>
-
-# Web-specific
 EXPO_PUBLIC_FAVICON_URL=<your_favicon_url>
 EXPO_PUBLIC_BASE_URL=<your_repo_name>
-
-# Mobile-specific
 EXPO_PUBLIC_SPLASH_BG_COLOR=<your_splash_bg_color>
 EXPO_PUBLIC_SPLASH_IMAGE=<your_splash_image_path>
 EXPO_PUBLIC_ICON=<your_app_icon_path>
-
-# Apple TV-specific
 EXPO_PUBLIC_APPLE_TV_ICON=<your_apple_tv_icon_path>
+EXPO_PUBLIC_ANDROID_TV_BANNER=<your_android_tv_banner_path>
 EXPO_PUBLIC_APPLE_TV_ICON_SMALL=<your_apple_tv_icon_small_path>
 EXPO_PUBLIC_APPLE_TV_ICON_SMALL_2X=<your_apple_tv_icon_small_2x_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF=<your_apple_tv_top_shelf_path>
