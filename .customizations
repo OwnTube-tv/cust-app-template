@@ -16,3 +16,4 @@ EXPO_PUBLIC_APPLE_TV_TOP_SHELF=<your_apple_tv_top_shelf_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_2X=<your_apple_tv_top_shelf_2x_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE=<your_apple_tv_top_shelf_wide_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=<your_apple_tv_top_shelf_wide_2x_path>
+EXPO_PUBLIC_HIDE_VIDEO_SITE_LINKS=<1 or 0>

@@ -122,6 +122,7 @@ EXPO_PUBLIC_BASE_URL=<your_repo_name>
 EXPO_PUBLIC_SPLASH_BG_COLOR=<your_splash_bg_color>
 EXPO_PUBLIC_SPLASH_IMAGE=<your_splash_image_path>
 EXPO_PUBLIC_ICON=<your_app_icon_path>
+EXPO_PUBLIC_HIDE_VIDEO_SITE_LINKS=<1 or 0>
 EXPO_PUBLIC_APPLE_TV_ICON=<your_apple_tv_icon_path>
 EXPO_PUBLIC_ANDROID_TV_BANNER=<your_android_tv_banner_path>
 EXPO_PUBLIC_APPLE_TV_ICON_SMALL=<your_apple_tv_icon_small_path>
