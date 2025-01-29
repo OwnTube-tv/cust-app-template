@@ -147,6 +147,8 @@ EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=<your_apple_tv_top_shelf_wide_2x_path>
   ```
 - **Code Signing for Apple & TestFlight:**
   Setting up code signing and TestFlight for Apple devices requires additional configuration. Refer to the [OwnTube Documentation](https://github.com/OwnTube-tv/web-client/blob/main/docs/pipeline.md) for detailed instructions on configuring code signing and deploying your app to TestFlight.
+- **Code Signing for Android & Google Play:**
+  Refer to the [OwnTube Documentation](https://github.com/OwnTube-tv/web-client/blob/main/docs/pipeline.md) for detailed instructions on how to configure delivery to Google Play.
 - Ensure all referenced files (e.g., icons and splash images) exist in the specified paths.
 - Double-check the configurations before deploying to avoid runtime errors.
 
