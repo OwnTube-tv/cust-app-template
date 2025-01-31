@@ -1,10 +1,6 @@
 name: Build mobile artifacts & deploy static content to Pages for a branded app
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
@@ -20,6 +16,7 @@ on:
         description: "Upload the app to the following Google Play track:"
         type: choice
         required: false
+        default: none
         options:
           - none
           - internal
@@ -158,6 +155,7 @@ jobs:
       build_info: ${{ needs.build_info.outputs.BUILD_INFO }}
       owntube_source: OwnTube-tv/web-client
       track: ${{ github.event.inputs.google_play_track }}
+      use_parent_repo_customizations: true
 
   google_play_tv:
     needs: [build_info, customizations_setup]
@@ -175,6 +173,7 @@ jobs:
       owntube_source: OwnTube-tv/web-client
       track: ${{ github.event.inputs.google_play_track }}
       isTV: true
+      use_parent_repo_customizations: true
 
   testflight_ios:
     if: ${{ github.event.inputs.upload_ios_to_testflight == 'true' }}
